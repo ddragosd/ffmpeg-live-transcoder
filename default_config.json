@@ -1,0 +1,78 @@
+{
+    "source": "rtmp://path/to/source/stream",
+    "target_host": "rtmp://path/to/target/stream",
+    "target_app": "target_app",
+    "target_stream": "demo_stream_$width_$height_$bitrate_kbps",
+    "sd_streams": [
+        {
+            "width": 1440,
+            "height": 1080,
+            "bitrate": 2200
+        },
+        {
+            "width": 960,
+            "height": 720,
+            "bitrate": 1000
+        },
+        {
+            "width": 640,
+            "height": 480,
+            "bitrate": 600
+        },
+        {
+            "width": 640,
+            "height": 360,
+            "bitrate": 300,
+            "audio_bitrate": 96
+        },
+        {
+            "width": 320,
+            "height": 240,
+            "bitrate": 150,
+            "audio_bitrate": 96
+        },
+        {
+            "width": 214,
+            "height": 160,
+            "bitrate": 64,
+            "audio_bitrate": 48
+        }
+    ],
+    "hd_streams": [
+        {
+            "width": 1920,
+            "height": 1080,
+            "bitrate": 2400
+        },
+        {
+            "width": 1280,
+            "height": 720,
+            "bitrate": 1200
+        },
+        {
+            "width": 854,
+            "height": 480,
+            "bitrate": 600
+        },
+        {
+            "width": 640,
+            "height": 360,
+            "bitrate": 300,
+            "audio_bitrate": 96
+        },
+        {
+            "width": 426,
+            "height": 240,
+            "bitrate": 150,
+            "audio_bitrate": 96
+        },
+        {
+            "width": 284,
+            "height": 160,
+            "bitrate": 10,
+            "audio_bitrate": 48
+        }
+    ],
+    "max_retries": 90,
+    "max_retries_delay_sec": 10
+}
