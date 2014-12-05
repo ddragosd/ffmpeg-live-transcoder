@@ -22,6 +22,15 @@ Usage:
 ```
     docker run ddragosd/ffmpeg-live-transcoder:2.4.3-1.1 \
         --user-config-json "`cat /usr/local/live-transcoder-config.json`"
+
+```
+
+To specify a log file:
+
+```
+    docker run -v /var/log/streamkit:/var/log/streamkit ddragosd/ffmpeg-live-transcoder:2.4.3-1.1 \
+        --user-config-json "`cat /usr/local/live-transcoder-config.json`" \
+        --log-file "/var/log/streamkit/ffmpeg-live-transcoding.log"
 ```
 
 

@@ -7,70 +7,94 @@
         {
             "width": 1440,
             "height": 1080,
-            "bitrate": 2200
+            "bitrate": 2200,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
             "width": 960,
             "height": 720,
-            "bitrate": 1000
+            "bitrate": 1000,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
             "width": 640,
             "height": 480,
-            "bitrate": 600
+            "bitrate": 600,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
-            "width": 640,
+            "width": 480,
             "height": 360,
             "bitrate": 300,
-            "audio_bitrate": 96
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 96,
+            "video_codec": "libx264"
         },
         {
             "width": 320,
             "height": 240,
             "bitrate": 150,
-            "audio_bitrate": 96
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 96,
+            "video_codec": "libx264"
         },
         {
             "width": 214,
             "height": 160,
             "bitrate": 64,
-            "audio_bitrate": 48
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 48,
+            "video_codec": "libx264"
         }
     ],
     "hd_streams": [
         {
             "width": 1920,
             "height": 1080,
-            "bitrate": 2400
+            "bitrate": 2400,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
             "width": 1280,
             "height": 720,
-            "bitrate": 1200
+            "bitrate": 1200,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
             "width": 854,
             "height": 480,
-            "bitrate": 600
+            "bitrate": 600,
+            "audio_codec": "copy",
+            "video_codec": "libx264"
         },
         {
             "width": 640,
             "height": 360,
             "bitrate": 300,
-            "audio_bitrate": 96
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 96,
+            "video_codec": "libx264"
         },
         {
             "width": 426,
             "height": 240,
             "bitrate": 150,
-            "audio_bitrate": 96
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 96,
+            "video_codec": "libx264"
         },
         {
             "width": 284,
             "height": 160,
             "bitrate": 10,
-            "audio_bitrate": 48
+            "audio_codec": "libfdk_aac",
+            "audio_bitrate": 48,
+            "video_codec": "libx264"
         }
     ],
     "max_retries": 90,
