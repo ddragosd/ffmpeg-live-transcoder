@@ -97,7 +97,7 @@ class LiveTranscoder:
             width = int(size.group(1))
             height = int(size.group(2))
             ratio = round(width / float(height), 2)
-            isHD = ratio == 1.77
+            isHD = (ratio >= 1.60)
             self.log.info("Source size: width=%d, height=%d, ratio=%.4f, HD=%s", width, height, ratio, isHD)
 
         cfg["width"] = width
