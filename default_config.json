@@ -54,7 +54,7 @@
         {
             "width": 1920,
             "height": 1080,
-            "bitrate": 2400,
+            "bitrate": 2200,
             "audio_codec": "copy",
             "video_codec": "libx264"
         },
