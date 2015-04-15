@@ -87,7 +87,7 @@ class LiveTranscoder:
             cfg["bitrate"] = bitrate
             self.log.info("Source bitrate: %s", bitrate)
 
-        regex = re.compile("\s(\d+)x(\d+)\s", re.IGNORECASE | re.MULTILINE | re.DOTALL)
+        regex = re.compile("\s(\d+)x(\d+)[\s,]", re.IGNORECASE | re.MULTILINE | re.DOTALL)
         size = regex.search(ffmpeg_response)
         width = 1
         height = 1
