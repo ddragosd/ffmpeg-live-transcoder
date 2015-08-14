@@ -80,7 +80,8 @@ class LiveTranscoder:
         ffmpeg_response = stderrdata
 
         self.log.debug("FFMPEG result %s", ffmpeg_response)
-        regex = re.compile("bitrate:\s(\d+)\s", re.IGNORECASE | re.MULTILINE | re.DOTALL)
+        # extract the bitrate either from the data exposed by ffmpeg, either from the first track that hax "XYZ kb/s"
+        regex = re.compile("bitrate:\s(\d+)\s|\s(\d+)\skb\/s", re.IGNORECASE | re.MULTILINE | re.DOTALL)
         bitrate = regex.search(ffmpeg_response)
         if bitrate is not None:
             bitrate = bitrate.group(1)
